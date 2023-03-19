@@ -165,7 +165,10 @@ INF  MinPlatformPkg/PlatformInit/SiliconPolicyPei/SiliconPolicyPeiPostMem.inf
 !include MinPlatformPkg/Include/Fdf/CoreSecurityPostMemoryInclude.fdf
 
 INF  UefiCpuPkg/Universal/Acpi/S3Resume2Pei/S3Resume2Pei.inf
+!if gMinPlatformPkgTokenSpaceGuid.PcdBootToShellOnly == FALSE
 INF  $(SKT_PKG)/Smm/Access/SmmAccessPei.inf
+!endif
+
 # S3 SMM PEI driver
 #INF  UefiCpuPkg/PiSmmCommunication/PiSmmCommunicationPei.inf
 
@@ -201,7 +204,9 @@ INF  UefiCpuPkg/CpuDxe/CpuDxe.inf
 !include AdvancedFeaturePkg/Include/PostMemory.fdf
 INF  MdeModulePkg/Universal/Acpi/S3SaveStateDxe/S3SaveStateDxe.inf
 INF  MdeModulePkg/Universal/Acpi/BootScriptExecutorDxe/BootScriptExecutorDxe.inf
+!if gMinPlatformPkgTokenSpaceGuid.PcdBootToShellOnly == FALSE
 INF  UefiCpuPkg/CpuS3DataDxe/CpuS3DataDxe.inf
+!endif
 INF  MdeModulePkg/Universal/LockBox/SmmLockBox/SmmLockBox.inf
 INF  MdeModulePkg/Universal/Console/TerminalDxe/TerminalDxe.inf
 INF  MdeModulePkg/Universal/PrintDxe/PrintDxe.inf
@@ -210,7 +215,9 @@ INF  MdeModulePkg/Bus/Scsi/ScsiDiskDxe/ScsiDiskDxe.inf
 
 INF  MdeModulePkg/Bus/Ata/AtaAtapiPassThru/AtaAtapiPassThru.inf
 INF  MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBusDxe.inf
+!if gMinPlatformPkgTokenSpaceGuid.PcdBootToShellOnly == FALSE
 INF  IntelSiliconPkg/Feature/Flash/SpiFvbService/SpiFvbServiceSmm.inf
+!endif
 INF  MdeModulePkg/Bus/Pci/NvmExpressDxe/NvmExpressDxe.inf
 INF  BoardModulePkg/LegacySioDxe/LegacySioDxe.inf
 INF  BoardModulePkg/BoardBdsHookDxe/BoardBdsHookDxe.inf
