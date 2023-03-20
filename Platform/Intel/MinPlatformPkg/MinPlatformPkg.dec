@@ -357,7 +357,7 @@
   # Stage 5 - boot to OS with security boot enabled
   # Stage 6 - boot with advanced features enabled
   #
-  gMinPlatformPkgTokenSpaceGuid.PcdBootStage|3|UINT8|0xF00000A0
+  gMinPlatformPkgTokenSpaceGuid.PcdBootStage|4|UINT8|0xF00000A0
 
   ## FSP Boot Mode Selector
   # FALSE: The board is not a FSP wrapper (FSP binary not used)

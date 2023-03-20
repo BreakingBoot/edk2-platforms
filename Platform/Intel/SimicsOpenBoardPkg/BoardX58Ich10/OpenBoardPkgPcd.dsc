@@ -24,7 +24,7 @@
   # Stage 4 - boot to OS
   # Stage 5 - boot to OS with security boot enabled
   #
-  gMinPlatformPkgTokenSpaceGuid.PcdBootStage|3
+  gMinPlatformPkgTokenSpaceGuid.PcdBootStage|4
 
 [PcdsFeatureFlag.common]
   ######################################
