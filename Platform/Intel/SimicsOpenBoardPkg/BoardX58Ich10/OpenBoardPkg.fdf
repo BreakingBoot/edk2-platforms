@@ -212,6 +212,10 @@ INF  MdeModulePkg/Universal/Console/TerminalDxe/TerminalDxe.inf
 INF  MdeModulePkg/Universal/PrintDxe/PrintDxe.inf
 INF  MdeModulePkg/Bus/Scsi/ScsiBusDxe/ScsiBusDxe.inf
 INF  MdeModulePkg/Bus/Scsi/ScsiDiskDxe/ScsiDiskDxe.inf
+INF  MdeModulePkg/Application/BBClient/BBClient.inf
+INF  MdeModulePkg/Application/Example1_Driver_Lockbox/Example1_Driver_Lockbox.inf
+INF  MdeModulePkg/Application/Example1_App/Example1_App.inf
+INF  MdeModulePkg/Application/SmmHarden/SmmHarden.inf
 
 INF  MdeModulePkg/Bus/Ata/AtaAtapiPassThru/AtaAtapiPassThru.inf
 INF  MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBusDxe.inf

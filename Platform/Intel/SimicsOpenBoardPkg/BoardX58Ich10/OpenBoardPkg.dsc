@@ -251,6 +251,10 @@
   MdeModulePkg/Universal/Console/TerminalDxe/TerminalDxe.inf
   MdeModulePkg/Universal/EbcDxe/EbcDxe.inf
   MdeModulePkg/Universal/PrintDxe/PrintDxe.inf
+  MdeModulePkg/Application/BBClient/BBClient.inf
+  MdeModulePkg/Application/Example1_Driver_Lockbox/Example1_Driver_Lockbox.inf 
+  MdeModulePkg/Application/Example1_App/Example1_App.inf
+  MdeModulePkg/Application/SmmHarden/SmmHarden.inf
 !if gMinPlatformPkgTokenSpaceGuid.PcdBootToShellOnly == FALSE
   #MdeModulePkg/Universal/LockBox/SmmLockBox/SmmLockBox.inf {
   #  <LibraryClasses>
